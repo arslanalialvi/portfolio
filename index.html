@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arslan Ali - Senior Android Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Body */
+    body {
+      color: #333;
+      background-color: #f7f9fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #2a9d8f;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2a9d8f;
+    }
+
+    /* Image Slider */
+    .slider {
+      display: flex;
+      overflow: hidden;
+      max-width: 1200px;
+      width: 100%;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slide {
+      min-width: 100%;
+      transition: 0.5s ease;
+    }
+
+    /* Section Styling */
+    section {
+      width: 90%;
+      max-width: 1200px;
+      padding: 40px;
+      background-color: #ffffff;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      position: relative;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #2a9d8f;
+      font-size: 24px;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      margin: 0 auto;
+      display: block;
+    }
+
+    /* Custom Colors for Each Heading */
+    #about h2 { color: #2a9d8f; }
+    #skills h2 { color: #e76f51; }
+    #experience h2 { color: #264653; }
+    #projects h2 { color: #f4a261; }
+    #contact h2 { color: #2a9d8f; }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Content Styling */
+    .content {
+      margin-top: 20px;
+    }
+
+    p, ul {
+      color: #555;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    strong {
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2a9d8f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #207d70;
+    }
+
+    /* Social Media Icons */
+    .social-icons a {
+      font-size: 24px;
+      color: #2a9d8f;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Arslan Ali - Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Image Slider -->
+  <div class="slider">
+    <div class="slide"><img src="https://via.placeholder.com/1200x400" alt="Conference 1"></div>
+    <div class="slide"><img src="https://via.placeholder.com/1200x400" alt="Conference 2"></div>
+    <div class="slide"><img src="https://via.placeholder.com/1200x400" alt="Conference 3"></div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+      <p><strong>Dynamic and results-driven Senior Android Developer</strong> with 7+ years of experience, specializing in clean architecture, performance optimization, and modern Android development. Proven expertise in Kotlin, Java, and Jetpack Compose, with over 25 applications launched, some serving millions of users. Demonstrated success in scalable architecture patterns (MVVM, MVI) and robust unit testing practices. A proactive learner and presenter, continuously exploring advancements in Android development to build responsive and innovative applications.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Key Skills</h2>
+    <div class="content">
+      <ul>
+        <li><strong>Languages:</strong> Java, Kotlin, Dart, C++</li>
+        <li><strong>Architecture Patterns:</strong> MVP, MVVM, MVI, MVC</li>
+        <li><strong>Libraries:</strong> Jetpack Compose, Room, Realm, SQLite, Dagger2, Hilt, Coroutines, Flow API, Retrofit, Ktor</li>
+        <li><strong>Testing & CI/CD:</strong> Unit Testing, TDD, GitHub, Bitbucket, Azure, CI/CD pipelines</li>
+        <li><strong>Tools & Frameworks:</strong> Android SDK, Firebase, FCM, WorkManager, Navigation Component, ProGuard, Jitsi Meet SDK</li>
+        <li><strong>Specialized Experience:</strong> Dependency Injection, Custom UI Components, Offline Data Sync, Media Streaming, Sensors Integration, Payment Gateways (Checkout 2, Paymob, Stripe)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="content">
+      <h3><strong>Senior Android Engineer at Marham</strong> (Feb 2023 - Dec 5, 2024)</h3>
+      <p>Spearheaded Android development with Kotlin and Java, focusing on seamless UI with Jetpack Compose and XML for Pakistan’s top healthcare platform. Integrated <strong>Twilio, Jitsi Meet SDK, and webRTC</strong> for secure video calling; implemented Sendbird SDK, Comet Chat, and SignalR for enriched chat functionality.</p>
+      
+      <h3><strong>Senior Software Engineer (Android) at QuantumLHE (Pvt) Ltd.</strong> (Dec 2021 - Feb 2023)</h3>
+      <p>Led development for the Second Trend App, a localized marketplace solution, emphasizing offline-first architecture with WorkManager and Job Queue. Utilized MVVM, Navigation Component, and a shared ViewModel to deliver a smooth user experience, while integrating Stripe for secure transactions.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="content">
+      <h3>Notable Applications</h3>
+      <p><strong>Marham:</strong> Pakistan's premier healthcare app (Play Store Link)</p>
+      <p><strong>Second Trend:</strong> A marketplace app (Play Store Link)</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="content">
+      <p><strong>Email:</strong> arslanalvi786@yahoo.com | <strong>Phone:</strong> 03456135405</p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/arslan-ali-alvi" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/arslanalialvi" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${100 * (i - index)}%)`;
+      });
+    };
+
+    showSlide(currentSlide);
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 3000);
+  </script>
+</body>
+</html>
